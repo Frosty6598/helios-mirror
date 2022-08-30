@@ -3,6 +3,8 @@ from threading import Thread
 from html import escape
 from urllib.parse import quote
 from telegram.ext import CommandHandler, CallbackQueryHandler
+from time import sleep
+from telegram import InlineKeyboardMarkup
 
 from bot import dispatcher, LOGGER, SEARCH_API_LINK, SEARCH_PLUGINS, get_client, SEARCH_LIMIT
 from bot.helper.ext_utils.telegraph_helper import telegraph
