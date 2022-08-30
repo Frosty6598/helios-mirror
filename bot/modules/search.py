@@ -21,6 +21,28 @@ if SEARCH_PLUGINS is not None:
             qbclient.search_uninstall_plugin(names=plugin['name'])
     qbclient.search_install_plugin(SEARCH_PLUGINS)
     qbclient.auth_log_out()
+    
+SITES = {
+    "1337x": "1337x",
+    "yts": "YTS",
+    "tgx": "TorrentGalaxy",
+    "torlock": "Torlock",
+    "piratebay": "PirateBay",
+    "nyaasi": "NyaaSi",
+    "zooqle": "Zooqle",
+    "kickass": "KickAss",
+    "bitsearch": "Bitsearch",
+    "glodls": "Glodls",
+    "magnetdl": "MagnetDL",
+    "limetorrent": "LimeTorrent",
+    "torrentfunk": "TorrentFunk",
+    "torrentproject": "TorrentProject",
+    "libgen": "Libgen",
+    "ybt": "YourBittorrent",
+    "all": "All"
+}
+
+TELEGRAPH_LIMIT = 300
 
 if SEARCH_API_LINK:
     try:
